@@ -12,6 +12,8 @@ cover:
   caption: 'Hello, World! program handwritten in the C language and signed Bria Kergh (Brian Kernighan, 1978)'
 ---
 
+Cover Image: Hello, World! program handwritten in the C language and signed Brian Kernighan ([Brian Kernighan](https://upload.wikimedia.org/wikipedia/commons/2/21/Hello_World_Brian_Kernighan_1978.jpg), 1978)
+
 # [Hello 🌍!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
 
 Welcome to my blog.
