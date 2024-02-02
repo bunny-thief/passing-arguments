@@ -5,6 +5,7 @@ draft: false
 categories: ['Development']
 tags: [Java, Maven]
 ShowCodeCopyButtons: true
+summary: Do you want to share your Java application with others or reuse your own code without copying and pasting? Then you need to learn about Java Archives (JAR) files.
 
 cover:
   image: 'img/jar/c-m-X_j3b4rqnlk-unsplash.jpg' # https://unsplash.com/photos/books-in-shelves-in-room-X_j3b4rqnlk
@@ -16,7 +17,7 @@ cover:
 
 ## Overview
 
-This post is about Java Archives (JAR) files. We are going to discuss what a JAR file is, how it is created and finally, how to import it into a Java application.
+Do you want to share your Java application with others or reuse your own code without copying and pasting? Then you need to learn about Java Archives (JAR) files. We are going to discuss what JAR files are, how they are created and finally, how to import it into a Java application.
 
 Before getting into all the details, let's first discuss what problem JAR files help solve. Let's imagine a scenerio, you are happily coding along when you come up with a problem that requires a to code a solution. You start to sketch out one way in which you might solve this when you suddenly realize that you've already encoutered this exact problem in the past. So you track down your old code, copy it and then paste it in your current project. Voila, problem solved! Well, not exactly.
 

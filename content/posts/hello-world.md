@@ -4,7 +4,7 @@ date: 2024-01-22T09:00:35+01:00
 draft: false
 categories: ['Development']
 tags: ['Java']
-#author: 'Jacques'
+summary: Welcome to my blog.
 
 cover:
   image: 'img/Hello_World_Brian_Kernighan_1978.jpg' # https://upload.wikimedia.org/wikipedia/commons/2/21/Hello_World_Brian_Kernighan_1978.jpg
