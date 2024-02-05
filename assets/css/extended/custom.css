@@ -1,0 +1,23 @@
+.terminal {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  
+  font-size: 0.78em;
+  max-width: 720px;
+}
+
+.bp {
+  padding-bottom: 5px;
+}
+
+.bottom-margin {
+  margin-bottom: 20px;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: "DejaVu Sans Mono", monospace;
+}
