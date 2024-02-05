@@ -42,34 +42,13 @@ A JAR file is a compressed archive that contains one or more compiled Java files
 
 Here is the structure of a JAR file that contains only one class file. Luckily, we don't need to know how it's organized as Maven takes care of putting everything in the right place. More on that later. The main takeaway is that inside of a JAR file we will find at least one Java class file, a Maven POM file and metadata files inside of a defined directory structure.
 
-```
-.
-├── dev
-│   └── passingarguments
-│       └── primenumbers
-│           └── PrimeNumbers.class
-└── META-INF
-    ├── MANIFEST.MF
-    └── maven
-        └── dev.passingarguments
-            └── primeNumbers
-                ├── pom.properties
-                └── pom.xml
-```
+{{< java-jar-file/jar-file-structure >}}
 
 _JAR file directory structure._
 
 One last thing before we finish this section. The JAR files's directory structure above is determined by the [Maven Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html). When you create a Maven project it creates the following nested directories `src/main/java`. It also marks the `/java` directory as a source directory and then nests a set of packages which were specified when the project was created. Marking the `/java` directory as source directory is a way of letting Maven know where to look for `.java` files that need to be compiled.
 
-```
- src
-    └── main
-        └── java
-            └── dev
-                └── passingarguments
-                    └── primenumbers
-                        └── PrimeNumbers.java
-```
+{{< java-jar-file/primeNumbers-structure >}}
 
 _Partial directory structure of a Maven project._
 
@@ -169,22 +148,7 @@ mvn clean
 
 Hopefully you see the following output which indicates Maven is in good working order. If we see `BUILD SUCCESS` then we know all is alright and we can move on the the next part. Otherwise, if instead we see `BUILD FAILURE`, then something went wrong and you'll have to trouble shoot your Maven installation. Keep in mind that your output will only match what you see here if you are working with the [cloned repo](#clone-github-repo). If you are using your own Java project, then the `groupId` and subgroup will be different.
 
-```bash
-[INFO] Scanning for projects...
-[INFO]
-[INFO] -----------------< dev.passingarguments:primeNumbers >------------------
-[INFO] Building primeNumbers 0.3.0
-[INFO]   from pom.xml
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO]
-[INFO] --- clean:3.2.0:clean (default-clean) @ primeNumbers ---
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.173 s
-[INFO] Finished at: 2024-01-25T23:39:46+01:00
-[INFO] ------------------------------------------------------------------------
-```
+{{< java-jar-file/mvn-clean >}}
 
 _mvn clean screen ouput._
 
@@ -199,12 +163,7 @@ mvn package
 
 Check the output of this command. Near the bottom, you should the following three lines.
 
-```bash
-[INFO] --- jar:3.3.0:jar (default-jar) @ primeNumbers ---
-[INFO] Building jar: /home/user/Desktop/primeNumbers/target/primeNumbers-0.3.0.jar
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-```
+{{< java-jar-file/mvn-success >}}
 
 The middle line is the one we are most interested in: `/home/user/Desktop/primeNumbers/target/primeNumbers-0.3.0.jar`. It tells us the location where the JAR file was saved `/home/user/Desktop/primeNumbers/target/` as well as the name given to the file `primeNumbers-0.3.0.jar`. The location is the default used by Maven. The name of the file is taken from the `artifactId` and `version` of our project's POM file. You can grab that file and send it to anyone in order to share your Java application with them. Let's now try the `install` command.
 
@@ -241,11 +200,7 @@ And now execute the Maven install command.
 
 Here is the output from executing `mvn install`:
 
-```bash
-[INFO] --- install:3.1.1:install (default-install) @ primeNumbers ---
-[INFO] Installing /home/user/Desktop/primeNumbers/pom.xml to /home/user/.m2/repository/dev/passingarguments/primeNumbers/0.3.0/primeNumbers-0.3.0.pom
-[INFO] Installing /home/user/Desktop/primeNumbers/target/primeNumbers-0.3.0.jar to /home/user/.m2/repository/dev/passingarguments/primeNumbers/0.3.0/primeNumbers-0.3.0.jar
-```
+{{< java-jar-file/mvn-install >}}
 
 The second line and third lines tell us where in the local Maven repository the POM and JAR file are saved.
 
@@ -462,15 +417,11 @@ _Complete code for PrimeNumberApp._
 
 Here's what the output to the console looks like when we run the application and submit 37 as the input.
 
-```
-Prime Number Checker
-Enter number: 37
-37 is a prime number.
-```
+{{< java-jar-file/primeNumbers-output >}}
 
 _Screen output after running PrimeNumberApp._
 
-And with that we have reached the end of this guide. The code to the *primeNumberApp* can be found at the [Github repo](https://github.com/bunny-thief/primeNumberApp).
+And with that we have reached the end of this guide. The code to the _primeNumberApp_ can be found at the [Github repo](https://github.com/bunny-thief/primeNumberApp).
 
 ## Main Takeaways
 
