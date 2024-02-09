@@ -138,7 +138,7 @@ We'll take the first entry in that list to go over the information each entry pr
 
 {{< sdkman/activemq-listing >}}
 
-The listing for Apache ActiveMQ has the project name, a version number, the URL for the project's website and a nice long description. Nothing special right? Near the bottom we do have someting that does help us though. It's the install command for this candidate! Not only that but `sdk install activemq` also tells us the name SDKMAN uses internally to refer to this candidate, **activemq**. So whenever we want to manage _Apache ActiveMQ_ in SDKMAN we need to use `activemq` as the candidiate name.
+The listing for [Apache ActiveMQ](https://activemq.apache.org/ "activemq.apache.org") has the project name, a version number, the URL for the project's website and a nice long description. Nothing special right? Near the bottom we do have someting that does help us though. It's the install command for this candidate! Not only that but `sdk install activemq` also tells us the name SDKMAN uses internally to refer to this candidate, **activemq**. So whenever we want to manage _Apache ActiveMQ_ in SDKMAN we need to use `activemq` as the candidiate name.
 
 #### Default Install Version
 
