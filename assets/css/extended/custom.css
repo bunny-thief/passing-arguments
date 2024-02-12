@@ -3,8 +3,6 @@
   background-color: black;
   border-radius: 10px;
   padding-left: 10px;
-  padding-top: 10px;
-  
   font-size: 0.78em;
   max-width: 720px;
 }
@@ -17,7 +15,13 @@
   margin-bottom: 20px;
 }
 
+.green {
+  color:#4E9A06;
+}
+
 pre {
   white-space: pre-wrap;
   font-family: "DejaVu Sans Mono", monospace;
+  line-height: 21.06px;
+  padding: 10px 0px;
 }
