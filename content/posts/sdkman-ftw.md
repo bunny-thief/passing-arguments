@@ -1,6 +1,6 @@
 ---
 title: 'SDKMAN FTW'
-date: 2024-02-09T09:00:00+01:00
+date: 2024-02-05T09:00:00+01:00
 draft: false
 categories: ['Tools']
 tags: [Java, JDK, SDK]
