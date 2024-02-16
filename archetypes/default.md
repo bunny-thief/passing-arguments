@@ -5,6 +5,7 @@ draft: true
 categories: ['Development']
 tags: [Java]
 ShowCodeCopyButtons: true
+Summary:
 
 cover:
   image: 'img/sdkman/bubble-logo-sdkman-groovy-color.png' # https://github.com/dmesu/sdkman-website/blob/master/site/src/site/assets/img/bubble-logo-sdkman-groovy-color.png
