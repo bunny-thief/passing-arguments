@@ -1,5 +1,6 @@
 ---
 title: 'Manage Local JDKs with SDKMAN'
+slug: local-jdks
 date: 2024-02-12T09:00:01+01:00
 draft: false
 categories: ['Tools']
@@ -16,7 +17,7 @@ cover:
 
 ## Overview
 
-In the [previous post]({{< ref "sdkman-ftw" >}} ) we installed SDKMAN and learned how we can use it to help us manage SDKs. This post will go over how we can make JDKs that have not been installed with _SDKMAN_, visible to it so they can be managed with _SDKMAN_. We will also uninstall a JDK, using the APT package manager once we no longer need or want it on our system.
+In the [previous post]({{< ref "002-sdkman-ftw" >}} ) we installed SDKMAN and learned how we can use it to help us manage SDKs. This post will go over how we can make JDKs that have not been installed with _SDKMAN_, visible to it so they can be managed with _SDKMAN_. We will also uninstall a JDK, using the APT package manager once we no longer need or want it on our system.
 
 ## Requirements
 

@@ -1,5 +1,6 @@
 ---
 title: 'Hello, World!'
+slug: hello-world
 date: 2024-01-22T09:00:35+01:00
 draft: false
 categories: ['Development']
