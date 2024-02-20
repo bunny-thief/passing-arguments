@@ -9,7 +9,7 @@ ShowCodeCopyButtons: true
 summary: Do you want to share your Java application with others or reuse your own code without copying and pasting? Then you need to learn about Java Archives (JAR) files.
 
 cover:
-  image: 'img/jar/c-m-X_j3b4rqnlk-unsplash.jpg' # https://unsplash.com/photos/books-in-shelves-in-room-X_j3b4rqnlk
+  image: 'img/001-java-jar-file/c-m-X_j3b4rqnlk-unsplash.jpg' # https://unsplash.com/photos/books-in-shelves-in-room-X_j3b4rqnlk
   alt: 'Archive Shelfs at Sächsisches Staatsarchiv in Dresden, Saxony, Germany' # alt text
   caption: 'Archive Shelfs at Sächsisches Staatsarchiv in Dresden, Saxony, Germany'
 ---
@@ -43,13 +43,13 @@ A JAR file is a compressed archive that contains one or more compiled Java files
 
 Here is the structure of a JAR file that contains only one class file. Luckily, we don't need to know how it's organized as Maven takes care of putting everything in the right place. More on that later. The main takeaway is that inside of a JAR file we will find at least one Java class file, a Maven POM file and metadata files inside of a defined directory structure.
 
-{{< java-jar-file/jar-file-structure >}}
+{{< 001-java-jar-file/jar-file-structure >}}
 
 _JAR file directory structure._
 
 One last thing before we finish this section. The JAR files's directory structure above is determined by the [Maven Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html). When you create a Maven project it creates the following nested directories `src/main/java`. It also marks the `/java` directory as a source directory and then nests a set of packages which were specified when the project was created. Marking the `/java` directory as source directory is a way of letting Maven know where to look for `.java` files that need to be compiled.
 
-{{< java-jar-file/primeNumbers-structure >}}
+{{< 001-java-jar-file/primeNumbers-structure >}}
 
 _Partial directory structure of a Maven project._
 
@@ -149,7 +149,7 @@ mvn clean
 
 Hopefully you see the following output which indicates Maven is in good working order. If we see `BUILD SUCCESS` then we know all is alright and we can move on the the next part. Otherwise, if instead we see `BUILD FAILURE`, then something went wrong and you'll have to trouble shoot your Maven installation. Keep in mind that your output will only match what you see here if you are working with the [cloned repo](#clone-github-repo). If you are using your own Java project, then the `groupId` and subgroup will be different.
 
-{{< java-jar-file/mvn-clean >}}
+{{< 001-java-jar-file/mvn-clean >}}
 
 _mvn clean screen ouput._
 
@@ -164,7 +164,7 @@ mvn package
 
 Check the output of this command. Near the bottom, you should the following three lines.
 
-{{< java-jar-file/mvn-success >}}
+{{< 001-java-jar-file/mvn-success >}}
 
 The middle line is the one we are most interested in: `/home/user/Desktop/primeNumbers/target/primeNumbers-0.3.0.jar`. It tells us the location where the JAR file was saved `/home/user/Desktop/primeNumbers/target/` as well as the name given to the file `primeNumbers-0.3.0.jar`. The location is the default used by Maven. The name of the file is taken from the `artifactId` and `version` of our project's POM file. You can grab that file and send it to anyone in order to share your Java application with them. Let's now try the `install` command.
 
@@ -201,7 +201,7 @@ And now execute the Maven install command.
 
 Here is the output from executing `mvn install`:
 
-{{< java-jar-file/mvn-install >}}
+{{< 001-java-jar-file/mvn-install >}}
 
 The second line and third lines tell us where in the local Maven repository the POM and JAR file are saved.
 
@@ -418,7 +418,7 @@ _Complete code for PrimeNumberApp._
 
 Here's what the output to the console looks like when we run the application and submit 37 as the input.
 
-{{< java-jar-file/primeNumbers-output >}}
+{{< 001-java-jar-file/primeNumbers-output >}}
 
 _Screen output after running PrimeNumberApp._
 

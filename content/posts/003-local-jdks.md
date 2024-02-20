@@ -9,7 +9,7 @@ ShowCodeCopyButtons: true
 summary: Make JDKs that have not been installed with _SDKMAN_, visible to it so they can be managed with _SDKMAN_.
 
 cover:
-  image: 'img/local-jdks/shunya-koide-1emWndlDHs0-unsplash.jpg'
+  image: 'img/003-local-jdks/shunya-koide-1emWndlDHs0-unsplash.jpg'
   # https://unsplash.com/photos/brown-wooden-book-shelves-in-library-1emWndlDHs0
   alt: 'Book Shelves in Library' # alt text
   caption: 'Book Shelves in Library'
@@ -47,7 +47,7 @@ java -version
 
 In my case running the `java -version` command points to _Temurin_ version 21.0.2. What you see on your screen will depend on what JDK is installed and set as the default in _SDKMAN_.
 
-{{< local-jdks/temurin-version >}}
+{{< 003-local-jdks/temurin-version >}}
 
 Let's also run the equivalent command to check the version of the default _Java_ candidate in _SDKMAN_.
 
@@ -57,7 +57,7 @@ sdk current java
 
 We should see that it also points to _Temurin_ 21.0.2.
 
-{{< local-jdks/sdkman-current-temurin >}}
+{{< 003-local-jdks/sdkman-current-temurin >}}
 
 So we have installed a JDK without using _SDKMAN_ but we can't access it because _SDKMAN_ doesn't know it even exists. Let's now move on to the next section to find how we make _SDKMAN_ point to _OpenJDK 17_.
 
@@ -79,7 +79,7 @@ sdk install java openjdk-17-jdk /usr/lib/jvm/java-17-openjdk-amd64/
 
 If everything went well, you should see the following message printed on the screen.
 
-{{< local-jdks/install-openjdk17 >}}
+{{< 003-local-jdks/install-openjdk17 >}}
 
 We can also check that OpenJDK 17 now appears in the list of _Java_ candidates.
 
@@ -89,7 +89,7 @@ sdk list java
 
 We have to scroll all the way down to the bottom of the list and see **openjdk-17-jdk** under the "Identifier" column.
 
-{{< local-jdks/sdkman-list-java  >}}
+{{< 003-local-jdks/sdkman-list-java  >}}
 
 Although this example used _OpenJDK 17_, keep in mind that we can use this method to make _SDKMAN_ aware of any JDK. All we need is to know where it is located.
 
@@ -103,7 +103,7 @@ sdk use java openjdk-17-jdk
 
 We should see the following confirmation on the screen.
 
-{{< local-jdks/use-confirmation>}}
+{{< 003-local-jdks/use-confirmation>}}
 
 We can now check the Java version to confirm OpenJDK 17 is available on our shell.
 
@@ -113,7 +113,7 @@ java -version
 
 Hopefully we see _OpenJDK_ version "17.0.9" as the current Java candidate in the current shell.
 
-{{< local-jdks/openjdk-version >}}
+{{< 003-local-jdks/openjdk-version >}}
 
 That's great, SDKMAN is now pointing to _openjdk-17-jdk_! We can now manage other JDKs which are not installed with SDKMAN. Remember that by running the `use` command we can only access _openjdk-17-jdk_ within the terminal shell in which we ran that command. If we open another shell, then the default Java candidate will be active.
 
@@ -129,7 +129,7 @@ sdk current java
 
 I'm seeing Temurin 21.0.2 but you will see whichever JDK is set as the default in _SDKMAN_ for your system.
 
-{{< local-jdks/sdkman-current-temurin >}}
+{{< 003-local-jdks/sdkman-current-temurin >}}
 
 In order to set _OpenJDK 17_ as the default version we need to run the following command.
 
@@ -139,7 +139,7 @@ sdk default java openjdk-17-jdk
 
 SDKMAN's confirmation makes it very clear that that OpenJDK 17 should now be set for all shells.
 
-{{< local-jdks/set-jdk >}}
+{{< 003-local-jdks/set-jdk >}}
 
 If we run `java -version` now, we should see that _OpenJDK 17_ is the current Java candidate, even if we open up a brand new shell.
 
@@ -161,7 +161,7 @@ dpkg --list | grep jdk
 
 > The "Version" and "Architecture" columns have been removed from the output of the `dpkg --list` command so the content fits on one line.
 
-{{< local-jdks/dpkg-list >}}
+{{< 003-local-jdks/dpkg-list >}}
 
 We have to make sure we remove all four packages.
 
@@ -171,7 +171,7 @@ sudo apt purge --auto-remove openjdk-17*
 
 Type `y` and press `Enter` to uninstall the packages and remove the files.
 
-{{< local-jdks/delete-jdk >}}
+{{< 003-local-jdks/delete-jdk >}}
 
 If we list all packages which are currentyl installed and have **jdk** in the name again, we won't see any output.
 

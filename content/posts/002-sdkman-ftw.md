@@ -9,7 +9,7 @@ ShowCodeCopyButtons: true
 summary: If you are manually downloading and installing JDKs and other Java related software libraries and packages, you need to check out SDKMAN, the Software Development Kit Manager.
 
 cover:
-  image: 'img/sdkman/bubble-logo-sdkman-groovy-color.png' # https://github.com/dmesu/sdkman-website/blob/master/site/src/site/assets/img/bubble-logo-sdkman-groovy-color.png
+  image: 'img/002-sdkman/bubble-logo-sdkman-groovy-color.png' # https://github.com/dmesu/sdkman-website/blob/master/site/src/site/assets/img/bubble-logo-sdkman-groovy-color.png
   alt: 'SDKMAN blue groovy logo' # alt text
   caption: 'SDKMAN blue groovy logo'
   cover.caption: 'test'
@@ -83,7 +83,7 @@ sdk version
 
 Using SDKMAN is a breeze. Just type in `sdk` and then `Enter`. That will display a list of all 16 commands which are available. To use a command, you need to type `sdk` followed by a command.
 
-{{< sdkman/commands >}}
+{{< 002-sdkman/commands >}}
 
 ### Command Usage
 
@@ -107,7 +107,7 @@ sdk help install
 
 The manpage for all other commands will have the same structure. **NAME**, **SYNOPSIS**, **DESCRIPTION**, etc. I find the description and the examples are the most useful when first staring to use SDKMAN.
 
-{{< sdkman/help-install>}}
+{{< 002-sdkman/help-install>}}
 
 #### Required Parameters
 
@@ -137,7 +137,7 @@ sdk list
 
 We'll take the first entry in that list to go over the information each entry provides.
 
-{{< sdkman/activemq-listing >}}
+{{< 002-sdkman/activemq-listing >}}
 
 The listing for [Apache ActiveMQ](https://activemq.apache.org/ 'activemq.apache.org') has the project name, a version number, the URL for the project's website and a nice long description. Nothing special right? Near the bottom we do have someting that does help us though. It's the install command for this candidate! Not only that but `sdk install activemq` also tells us the name SDKMAN uses internally to refer to this candidate, **activemq**. So whenever we want to manage _Apache ActiveMQ_ in SDKMAN we need to use `activemq` as the candidiate name.
 
@@ -161,7 +161,7 @@ sdk list activemq
 
 And here's the output. That's quite a few options for just one single SDK. It's a good idea to use the `sdk list` command to find the name for other candiats and then use the candidate name to find which versions are available for that candidate.
 
-{{< sdkman/activemq-versions >}}
+{{< 002-sdkman/activemq-versions >}}
 
 We now know what commands are avilable in SDKMAN, how to find help for those commands, what a candiate is, how to find a candidate's name and which versions are available for each candidate. It's time to put SDKMAN through it's paces by installing a candidate.
 
@@ -188,7 +188,7 @@ Listing all candidates is not feasible so I'm only going to display the listing 
 
 We see the candidate name for all JDKs is **java** and that the default version is 21.0.2-tem. Note that this matches the JDK we want to install which is Temurin JDK 21.0.2. We could at this point run the install command with just the candidate name and omit the version and SDKMAN would install the correct version we are looking for. We'll skip that because we want to type the entire command out to get familiar with the full process.
 
-{{< sdkman/java-listing >}}
+{{< 002-sdkman/java-listing >}}
 
 ### List available versions for java candidate
 
@@ -200,7 +200,7 @@ sdk list java
 
 The list is quite long. Here, I'll list only versions of the Adoptium Temurin distribution. The top entry in the "Identifier" column is the one we need, **21.0.2-tem**. That is the latest available version of Temurin.
 
-{{< sdkman/java-versions >}}
+{{< 002-sdkman/java-versions >}}
 
 > ### JDK Versions
 >
@@ -223,7 +223,7 @@ sdk install java 21.0.2-tem
 
 Hit "Enter" to begin Downloading. If you happen to lose your connection while downloading or you stop the process before it's finished, you can resume where it left off by running the same command you entered to begin the installation.
 
-{{< sdkman/java-download >}}
+{{< 002-sdkman/java-download >}}
 
 If you have more than one version of a particular candidate installed, SDKMAN will ask you if you would like to make the newly installed version the **default** version. Note that the word _default_, in this context, has a different meaning to what I referred to earlier as [_default Install version_](#default-version 'Default Install Version') in the candidate listing section. SDKMAN's documentation uses the same term to refer to two different features. Making a version the **default** makes that version the one that is referred to by the OS in all command shells. This is what I would call _default shell version_. You cannot change the _default install version_, it always points to the latest release of a particular SDK.
 
@@ -233,7 +233,7 @@ sdk list java
 
 I ran the `list` command to display all the java candidates again. Below you'll see list of the JDKs I **currently have installed on my computer**. I have three different versions of the Temurin JDK so I'm only display the Temurin section here to keep things brief.
 
-{{< sdkman/temurin-versions>}}
+{{< 002-sdkman/temurin-versions>}}
 
 The **`>>>`** in the **Use** column indicates the _default shell version_ which the OS will refer to. Under "Status" we see **installed** and **local only**. A version labeled _installed_ means that it was installed with SDKMAN; _local only_ versions are those that where installed manually outside of SDKMAN.
 
