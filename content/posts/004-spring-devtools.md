@@ -56,11 +56,11 @@ In order to enable Automatic Restart we need to adjust two settings in IntelliJ.
 
 The first setting is located in the **Compiler** settings window. We can access it here by going through the _Settings_ sub-menu: `File > Settings > Build, Execution, Deployment > Compiler` Once there, we need to make sure "Build project automatically" is checked off.
 
-![Enable Automatic Restart](/img/004-spring-devtools/enable-automatic-restart.gif 'Enable Automatic Restart')
+![⚠️Enable Automatic Restart](/img/004-spring-devtools/enable-automatic-restart.gif 'Enable Automatic Restart')
 
 Next, we have to tell IntelliJ to **auto-make** the project even if it is currently running. That setting is located in the **Advanced Settings** window of the _Settings_ menu which is located here: `File > Settings > Advanced Settings`.
 
-![Enable Automatic Restart](/img/004-spring-devtools/allow-auto-make.gif 'Enable Automatic Restart')
+![⚠️Enable Automatic Restart](/img/004-spring-devtools/allow-auto-make.gif 'Enable Automatic Restart')
 
 Once Automatic Restart has been anabled, IntelliJ will restart your application automatically and reflect changes you introduce. It takes about one second for IntelliJ to act. You can tell it's working if you see the output from the _Run_ windown being cleared and reloaded.
 
@@ -100,7 +100,7 @@ This step is quite easy and doesn't require any coding or additional Spring Boot
 
 [LiveReload Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/livereload-web-extension/ 'LiveReload - Web extension by Todd Wolfson')
 
-![LiveReload Extension](/img/004-spring-devtools/live-reload-extension-page.png 'LiveReload Extension')
+![⚠️LiveReload Extension](/img/004-spring-devtools/live-reload-extension-page.png 'LiveReload Extension')
 
 After the extesion is installed, just make sure it is enabled. You can manage Firefox extensions by pasting th following into your the address bar.
 
@@ -108,7 +108,7 @@ After the extesion is installed, just make sure it is enabled. You can manage Fi
 about:addons
 ```
 
-![Current Date](/img/004-spring-devtools/enable-livereload.png 'Current Date')
+![⚠️Current Date](/img/004-spring-devtools/enable-livereload.png 'Current Date')
 
 ### Test LiveReload
 
@@ -120,7 +120,7 @@ http://localhost:8080/
 
 We should see the following text: "The current date is:" being displayed along with the current date.
 
-![Add LiveReload](/img/004-spring-devtools/current-date.png 'Add LiveReload')
+![⚠️Add LiveReload](/img/004-spring-devtools/current-date.png 'Add LiveReload')
 
 We can edit the **main.html** file in the _resources/templates_ directory and watch the changes in the browser window.
 

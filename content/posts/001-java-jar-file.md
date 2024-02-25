@@ -219,7 +219,7 @@ In this section we are going to create a new Java project, import the `PrimeNumb
 
 Start IntelliJ IDEA and create a new Java project. Make sure to select Maven as the "Build System".
 
-![IntelliJ IDEA new Project Dialogue](/img/jar/00-create-app.png 'IntelliJ IDEA new Project Dialogue')
+![⚠️IntelliJ IDEA new Project Dialogue](/img/jar/00-create-app.png 'IntelliJ IDEA new Project Dialogue')
 _IntelliJ IDEA new Project Dialogue._
 
 Here's what the starting code looks like.
@@ -342,12 +342,12 @@ _PrimeNumberApp POM file with dependencies list._
 
 We are almost ready to insert a call to the `isPrime()` method. Before we go back to writing more code we need to make sure we **reload** the POM file. If we don't reload it, it won't add the JAR file won't be added to the project. In the screencapture below we can see on the right side a small white "M" with two blue arrows. We need to click that little log to load our changes.
 
-![Maven Reload Button](/img/jar/04-reload-button.png 'Maven Reload Button')
+![⚠️Maven Reload Button](/img/jar/04-reload-button.png 'Maven Reload Button')
 _Maven Reload Button._
 
 The following gif shows our library being added to the project's External Library after reloading the Maven POM file.
 
-![Add primeNumbers library to 'External Libraries'](/img/jar/02-reload-maven-changes.gif "Add primeNumbers library to 'External Libraries'")
+![⚠️Add primeNumbers library to 'External Libraries'](/img/jar/02-reload-maven-changes.gif "Add primeNumbers library to 'External Libraries'")
 _Add primeNumbers library to 'External Libraries'._
 
 ### Add an import statement inside a .java file
