@@ -27,7 +27,7 @@ For applications that serve static content, such as Thymeleaf templates, an addi
 The following are required to follow along with this guide:
 
 1. A Spring Boot application that uses Maven.
-2. The application needs to expose a REST API endpoint. It also needs Spring MVC and a simple view with Thymeleaf. If you don't have a Spring Application handy, you can follow along with a Spring MVC project that I made called [devtools-demo](https://github.com/bunny-thief/devtools-demo 'devtools-demo Github Repo').
+2. The application needs to expose a REST API endpoint. It also needs Spring MVC and a simple view with Thymeleaf. If you don't have a Spring Application handy, you can follow along with a Spring MVC project that I made called [devtools-demo](https://github.com/jacques-navarro/devtools-demo 'devtools-demo Github Repo').
 3. [IntelliJ Idea Community Edition](https://www.jetbrains.com/idea/download/).
 4. You also need to have Firefox. We will be installing the [LiveReload Extension](https://addons.mozilla.org/en-US/firefox/addon/livereload-web-extension/ 'LiveReload - Web extension by Todd Wolfson').
 

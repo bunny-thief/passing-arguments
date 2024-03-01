@@ -80,7 +80,7 @@ params:
     - name: linkedin
       url: 'https://www.linkedin.com/in/jacques-navarro/'
     - name: github
-      url: 'https://github.com/bunny-thief'
+      url: 'https://github.com/jacques-navarro'
     - name: mastodon
       url: 'https://hachyderm.io/@bunnythief'
 

@@ -90,7 +90,7 @@ cd ~/Desktop
 Now execute the git clone command to pull a copy of the primeNumber repository to your desktop.
 
 ```bash
-git clone git@github.com:bunny-thief/primeNumbers.git
+git clone git@github.com:jacques-navarro/primeNumbers.git
 ```
 
 `cd` in to the project directory.
@@ -137,7 +137,7 @@ public class PrimeNumbers {
 {{< / highlight >}}
 _PrimeNumbers class._
 
-The code the PrimeNumbers class can be found at [Github](https://github.com/bunny-thief/primeNumbers).
+The code the PrimeNumbers class can be found at [Github](https://github.com/jacques-navarro/primeNumbers).
 
 #### Testing Maven
 
@@ -422,7 +422,7 @@ Here's what the output to the console looks like when we run the application and
 
 _Screen output after running PrimeNumberApp._
 
-And with that we have reached the end of this guide. The code to the _primeNumberApp_ can be found at the [Github repo](https://github.com/bunny-thief/primeNumberApp).
+And with that we have reached the end of this guide. The code to the _primeNumberApp_ can be found at the [Github repo](https://github.com/jacques-navarro/primeNumberApp).
 
 ## Main Takeaways
 
