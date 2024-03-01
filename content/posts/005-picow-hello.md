@@ -9,9 +9,9 @@ ShowCodeCopyButtons: true
 Summary: Write Hello, World! program in TinyGo for the Raspberry Pi Pico W
 
 cover:
-  image: '/img/005-picow-hello/picow-hello.jpg' # https://github.com/dmesu/sdkman-website/blob/master/site/src/site/assets/img/bubble-logo-sdkman-groovy-color.png
-  alt: 'SDKMAN blue groovy logo' # alt text
-  caption: 'SDKMAN blue groovy logo'
+  image: '/img/005-picow-hello/picow-hello.jpg'
+  alt: '⚠️Raspbarry Pi and TinyGo logos' # alt text
+  caption: 'Raspbarry Pi and TinyGo logos'
 ---
 
 ## Overview
